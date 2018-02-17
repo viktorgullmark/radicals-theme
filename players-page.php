@@ -29,17 +29,21 @@ foreach ($news as $item) {
             $rosterValue = $roster['value'];
             $rosterLabel = $roster['choices'][$rosterValue];
             ?>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 player-col">
-                    <div class="item-container">
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 player-col item-container-wrapper">
+                    <div class="item-container player-item-container">
                         <div class="row player-photo">
                             <div class="col-12" style="background-image: url('<?php the_field('photo', $item)?>')">
                         </div>
                         </div>
+                        <div class="hover-trigger">
                         <div class="row player-info" onclick="">
-                            <div class="col">
+                            <div class="col-10 player-col">
                                 <div class="meta-title"><?php echo $rosterLabel; ?></div>
-                                <!-- <img class="role-icon" src="<?php bloginfo('stylesheet_directory');?>/includes/resources/images/icon--<?php the_field('role', $item)?>.svg" /> -->
-                                <?php if (get_field('role', $item) === 'flex'): ?>
+                            </div>
+                            <div class="col-2 player-col role-icon-wrapper align-items-center justify-content-end">
+
+   <!-- <img class="role-icon" src="<?php bloginfo('stylesheet_directory');?>/includes/resources/images/icon--<?php the_field('role', $item)?>.svg" /> -->
+                                 <?php if (get_field('role', $item) === 'flex'): ?>
                                     <i class="role-icon fas fa-recycle"></i>
                                 <?php elseif (get_field('role', $item) === 'offense'): ?>
                                     <i class="role-icon fas fa-crosshairs"></i>
@@ -48,12 +52,27 @@ foreach ($news as $item) {
                                 <?php elseif (get_field('role', $item) === 'support'): ?>
                                     <i class="role-icon fas fa-plus"></i>
                                 <?php endif;?>
-                                <h3 class="news-title"><?php echo $item->post_title ?></h3>
+
                             </div>
                         </div>
+                        <div class="row player-info">
+                            <div class="col-12 player-col">
+                                <h4 class="player-title"><?php echo $item->post_title ?></h4>
+                            </div>
+                        </div>
+                        <div class="row player-info">
+                            <div class="col-12 player-col player-name-wrapper">
+                                <span class="player-name"><?php the_field('real_name', $item)?></span>
+                            </div>
+                        </div>
+                        </div>
+
+
+
+
 
                         <div class="row player-social">
-                            <div class="col align-items-center player-social-row">
+                            <div class="col player-col align-items-center player-social-row">
                             <?php if (get_field('twitch_account', $item)): ?>
                                 <a href="https://twitch.tv/<?php the_field('twitch_account', $item)?>"><i class="social-media-icon fab fa-twitch"></i></a>
                             <?php endif;?>

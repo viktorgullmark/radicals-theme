@@ -127,10 +127,11 @@ footer {
 .container {
   max-width: 85em; }
 
-.role-icon {
-  width: 20px;
-  float: right;
-  font-size: 1.2rem; }
+.role-icon-wrapper {
+  display: flex; }
+  .role-icon-wrapper .role-icon {
+    padding-right: 10px;
+    font-size: 1.75rem; }
 
 .contact-form-wrapper {
   padding: 15px; }
@@ -183,21 +184,48 @@ select.ninja-forms-field:not([size]):not([multiple]) {
 .submit-wrap .nf-field-element .ninja-forms-field:not(:disabled):not(.disabled) {
   cursor: pointer; }
 
+.player-item-container {
+  margin: 15px; }
+
+.item-container .news-item-wrapper {
+  margin: 15px 0; }
 .item-container .news-image {
   background: no-repeat center center;
   background-size: cover;
   height: 125px; }
-.item-container .col {
+.item-container .news-col {
+  padding: 0; }
+.item-container .player-col {
+  padding: 0; }
+.item-container .player-title {
+  padding: 10px;
+  padding-top: 0;
+  margin: 0; }
+.item-container .player-name-wrapper {
+  padding: 10px;
+  padding-top: 0; }
+  .item-container .player-name-wrapper .player-name {
+    margin: 0; }
+.item-container .news-col, .item-container .player-col {
   background: #fff; }
-  .item-container .col .meta-title {
-    font-size: .75rem;
-    color: #3f3f3f;
+  .item-container .news-col .meta-title, .item-container .player-col .meta-title {
+    margin: 0;
+    padding: 10px;
+    font-size: .8rem;
     display: block;
     position: relative;
-    margin: 5px 0;
-    text-decoration: none !important; }
+    text-decoration: none !important;
+    color: #3f3f3f;
+    background: #fff; }
+  .item-container .news-col .news-meta-title, .item-container .player-col .news-meta-title {
+    padding: 5px;
+    color: #fff;
+    background: #434343; }
+  .item-container .news-col .news-title-wrapper, .item-container .player-col .news-title-wrapper {
+    height: 70%;
+    padding: 0 10px;
+    display: flex; }
 .item-container .row {
-  margin: 15px 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); }
 .item-container .player-photo {
   height: 200px;
@@ -214,16 +242,20 @@ select.ninja-forms-field:not([size]):not([multiple]) {
   border-top: 2px solid #ccc; }
   .item-container .player-social .player-social-row {
     height: 100%;
-    display: flex; }
+    display: flex;
+    padding: 10px; }
 .item-container .player-social-placeholder {
   display: block;
   height: 50px;
   margin-top: 0;
   margin-bottom: 15px; }
-.item-container .player-info:hover + .player-social, .item-container .player-social:hover {
+.item-container .hover-trigger:hover + .player-social, .item-container .player-social:hover {
   display: block; }
-  .item-container .player-info:hover + .player-social + .player-social-placeholder, .item-container .player-social:hover + .player-social-placeholder {
+  .item-container .hover-trigger:hover + .player-social + .player-social-placeholder, .item-container .player-social:hover + .player-social-placeholder {
     display: none; }
+.item-container .player-meta-row {
+  width: 100%;
+  margin: 0; }
 
 .item-container:hover {
   text-decoration: none; }
