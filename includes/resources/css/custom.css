@@ -1,0 +1,238 @@
+header {
+  background: #fff; }
+  header .header #header-image {
+    padding: 10px 0;
+    margin: 0 auto; }
+    header .header #header-image img {
+      display: block;
+      margin: auto; }
+    header .header #header-image .row {
+      margin: 0; }
+      header .header #header-image .row .social-media-icons-wrapper {
+        display: flex;
+        padding: 15px 0; }
+  header .main-nav {
+    box-shadow: 0 10px 10px -6px rgba(0, 0, 0, 0.2);
+    border-top: 2px solid #ccc;
+    position: relative; }
+    header .main-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      text-align: center; }
+      header .main-nav ul li {
+        margin: 0;
+        padding: 0 5px; }
+        header .main-nav ul li a {
+          font-size: .8125rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: .05em;
+          color: #3f3f3f;
+          padding: 10px 0;
+          margin: 0;
+          display: block;
+          border-bottom: 3px solid #ccc;
+          -o-transition: .5s;
+          -ms-transition: .5s;
+          -moz-transition: .5s;
+          -webkit-transition: .5s;
+          transition: .5s;
+          min-width: 200px;
+          text-align: center; }
+        header .main-nav ul li a:focus,
+        header .main-nav ul li a:hover {
+          color: #000;
+          border-color: #000; }
+      header .main-nav ul .current_page_item a {
+        color: #3f3f3f;
+        border-color: #3f3f3f; }
+
+@media (max-width: 767px) {
+  header .header .main-pic #header-image .social-media-icons-wrapper {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: auto; }
+  header .header .main-nav .container {
+    padding: 0; }
+  header .header .main-nav ul {
+    display: block; }
+    header .header .main-nav ul li {
+      padding: 0 0; } }
+.social-media-icon {
+  margin: 0 5px;
+  font-size: 25px; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', Helvetica Neue, Arial, sans-serif;
+  font-weight: 300; }
+
+main {
+  flex: 1 0 auto;
+  padding: 15px; }
+
+a {
+  color: #3f3f3f; }
+
+a:hover {
+  color: #000; }
+
+.main-pic {
+  height: 240px;
+  margin: 0;
+  background: #fff !important; }
+  .main-pic .caption-text {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 4rem;
+    vertical-align: middle;
+    color: #3f3f3f;
+    text-align: center; }
+
+span {
+  color: #3f3f3f; }
+
+footer {
+  background: #1f1f1f;
+  height: 200px;
+  margin-top: 10px; }
+  footer .footer-content {
+    height: 100%;
+    padding: 15px; }
+    footer .footer-content .row {
+      height: 100%; }
+      footer .footer-content .row .col-12 {
+        margin: 0; }
+        footer .footer-content .row .col-12 .left-section h4 {
+          color: #f1f1f1;
+          display: inline-block; }
+        footer .footer-content .row .col-12 .left-section .social-media-icons a {
+          color: #f1f1f1; }
+        footer .footer-content .row .col-12 .left-section .social-media-icons a:hover {
+          color: #fff; }
+        footer .footer-content .row .col-12 .right-section .copyright-text {
+          color: #f1f1f1;
+          float: right; }
+
+.main-menu {
+  background: #fff; }
+  .main-menu a {
+    color: #3f3f3f; }
+
+.container {
+  max-width: 85em; }
+
+.role-icon {
+  width: 20px;
+  float: right;
+  font-size: 1.2rem; }
+
+.contact-form-wrapper {
+  padding: 15px; }
+
+.nf-field-element input:not([type="button"]),
+.nf-field-element textarea,
+.nf-field-element select {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+
+.nf-field-element input:not([type="button"]):focus,
+.nf-field-element textarea:focus,
+.nf-field-element select:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+
+select.ninja-forms-field:not([size]):not([multiple]) {
+  height: calc(2.25rem + 2px); }
+
+.nf-error .ninja-forms-field {
+  border: 1px solid #e80000 !important; }
+
+.submit-wrap .nf-field-element .ninja-forms-field {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+.submit-wrap .nf-field-element .ninja-forms-field:not(:disabled):not(.disabled) {
+  cursor: pointer; }
+
+.item-container .news-image {
+  background: no-repeat center center;
+  background-size: cover;
+  height: 125px; }
+.item-container .col {
+  background: #fff; }
+  .item-container .col .meta-title {
+    font-size: .75rem;
+    color: #3f3f3f;
+    display: block;
+    position: relative;
+    margin: 5px 0;
+    text-decoration: none !important; }
+.item-container .row {
+  margin: 15px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); }
+.item-container .player-photo {
+  height: 200px;
+  margin-bottom: 0; }
+  .item-container .player-photo .col-12 {
+    background-size: cover; }
+.item-container .player-info {
+  margin-top: 0;
+  margin-bottom: 0; }
+.item-container .player-social {
+  display: none;
+  margin-top: 0;
+  height: 50px;
+  border-top: 2px solid #ccc; }
+  .item-container .player-social .player-social-row {
+    height: 100%;
+    display: flex; }
+.item-container .player-social-placeholder {
+  display: block;
+  height: 50px;
+  margin-top: 0;
+  margin-bottom: 15px; }
+.item-container .player-info:hover + .player-social,
+.item-container .player-social:hover {
+  display: block; }
+  .item-container .player-info:hover + .player-social + .player-social-placeholder,
+  .item-container .player-social:hover + .player-social-placeholder {
+    display: none; }
+
+.item-container:hover {
+  text-decoration: none; }
+
+/*# sourceMappingURL=custom.css.map */
