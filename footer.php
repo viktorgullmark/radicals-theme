@@ -1,5 +1,5 @@
 
-<?php 
+<?php
 $frontpage = get_post(get_option('page_on_front'));
 global $post;
 ?>
@@ -15,14 +15,14 @@ global $post;
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                             <div class="social-media-icons">
-                                <?php get_template_part('partials/social-media-icons'); ?>
+                                <?php get_template_part('partials/social-media-icons');?>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right-section">
                     <span class="copyright-text">
-                        <?php the_field('copyright_text', $frontpage) ?>
+                        <?php the_field('copyright_text', $frontpage)?>
                     </span>
                 </div>
             </div>
@@ -30,7 +30,7 @@ global $post;
     </div>
 </footer>
 
+<?php wp_footer();?>
 
-<?php wp_footer(); ?>
 </body>
 </html>

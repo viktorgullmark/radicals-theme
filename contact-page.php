@@ -4,10 +4,10 @@
  */
 get_header();
 get_template_part('partials/menu');
-if ( have_posts() ) {
-    while ( have_posts() ) {
+if (have_posts()) {
+    while (have_posts()) {
         the_post();
-?>
+        ?>
 <main>
 <div class="container">
     <div class="row">
@@ -19,6 +19,6 @@ if ( have_posts() ) {
 </main>
 
 <?php
-    } // end while
+} // end while
 } // end if
 get_footer();

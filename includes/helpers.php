@@ -1,5 +1,5 @@
 <?php
-function pool_test() {
-    
+function rcs_test()
+{
+
 }
-?>

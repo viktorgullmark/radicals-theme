@@ -1,8 +1,8 @@
 <?php
-class Pool_hooks
+class RCS_hooks
 {
 
 
 
 }
-$Pool_hooks = new Pool_hooks();
+$RCS_hooks = new RCS_hooks();
