@@ -1,10 +1,10 @@
 <?php
 
-class Pool_Filters
+class RCS_Filters
 {
     public function __construct()
     {
         //add_filter('show_admin_bar', '__return_false');
     }
 }
-$Pool_Filters = new Pool_Filters;
+$RCS_Filters = new RCS_Filters;
