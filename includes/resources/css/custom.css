@@ -58,9 +58,20 @@ header {
     display: block; }
     header .header .main-nav ul li {
       padding: 0 0; } }
+@media (max-width: 905px) {
+  header .header .main-nav .container {
+    padding: 0; }
+  header .header .main-nav ul {
+    display: block; }
+    header .header .main-nav ul li {
+      display: block;
+      padding: 0 0; } }
 .social-media-icon {
   margin: 0 5px;
   font-size: 25px; }
+
+.display-name {
+  color: #fff; }
 
 html, body {
   height: 100%; }
@@ -125,7 +136,8 @@ footer {
     color: #3f3f3f; }
 
 .container {
-  max-width: 85em; }
+  max-width: 85em;
+  padding-top: 15px; }
 
 .role-icon-wrapper {
   display: flex; }
@@ -187,11 +199,25 @@ select.ninja-forms-field:not([size]):not([multiple]) {
 .player-item-container {
   margin: 15px; }
 
+.author-name {
+  font-size: 1.5rem; }
+
+.news-post-image {
+  border: 1px solid #ccc;
+  background: no-repeat center center;
+  background-color: #CCC;
+  background-size: cover;
+  height: 250px; }
+
+.divider {
+  border-top: 5px solid #CCC; }
+
 .item-container .news-item-wrapper {
   margin: 15px 0; }
 .item-container .news-image {
   background: no-repeat center center;
   background-size: cover;
+  background-color: #CCC;
   height: 125px; }
 .item-container .news-col {
   padding: 0; }
@@ -217,10 +243,12 @@ select.ninja-forms-field:not([size]):not([multiple]) {
     text-decoration: none !important;
     color: #3f3f3f;
     background: #fff; }
-  .item-container .news-col .news-meta-title, .item-container .player-col .news-meta-title {
-    padding: 5px;
-    color: #fff;
-    background: #434343; }
+  .item-container .news-col .news-meta-row, .item-container .player-col .news-meta-row {
+    margin: 0; }
+    .item-container .news-col .news-meta-row .news-meta-title, .item-container .player-col .news-meta-row .news-meta-title {
+      padding: 5px;
+      color: #fff;
+      background: #434343; }
   .item-container .news-col .news-title-wrapper, .item-container .player-col .news-title-wrapper {
     height: 70%;
     padding: 0 10px;
@@ -231,6 +259,7 @@ select.ninja-forms-field:not([size]):not([multiple]) {
   height: 200px;
   margin-bottom: 0; }
   .item-container .player-photo .col-12 {
+    background-color: #CCC;
     background-size: cover; }
 .item-container .player-info {
   margin-top: 0;
@@ -257,6 +286,12 @@ select.ninja-forms-field:not([size]):not([multiple]) {
   width: 100%;
   margin: 0; }
 
+@media (max-width: 576px) {
+  .player-social {
+    display: block !important; }
+
+  .player-social-placeholder {
+    display: none !important; } }
 .item-container:hover {
   text-decoration: none; }
 

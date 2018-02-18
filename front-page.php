@@ -23,15 +23,21 @@ if (have_posts()) {
             <div class="row">
             <?php
 foreach ($news as $item) {
-            ?>  
+            ?>
                 <div class="col-lg-6">
                     <a class="item-container" href="<?php echo the_permalink($item) ?>">
                         <div class="row news-item-wrapper">
-                            <div class="col-4 news-image" style="background-image: url('<?php the_field('image', $item)?>')">
-
+                                <?php if (get_field('image', $item)): ?>
+                                <div class="col-4 news-image" style="background-image: url('<?php the_field('image', $item)?>')">
+                                <?php else: ?>
+                                <div class="col-4 news-image">
+                                <?php endif;?>
                             </div>
                             <div class="news-col col">
-                                <div class="news-meta-title meta-title">Posted <?php echo human_time_diff(get_the_time('U', $item), current_time('timestamp', 1)) . ' ago'; ?></div>
+                                <div class="row news-meta-row">
+                                    <div class="col-6 news-meta-title meta-title">Posted <?php echo human_time_diff(get_the_time('U', $item), current_time('timestamp', 1)) . ' ago'; ?></div>
+                                    <div class="col-6 news-meta-title meta-title d-flex justify-content-end">by <?php echo get_the_author($item); ?></div>
+                                </div>
                                 <div class="news-title-wrapper align-items-center">
                                     <h3 class="news-title"><?php echo $item->post_title ?></h3>
                                 </div>

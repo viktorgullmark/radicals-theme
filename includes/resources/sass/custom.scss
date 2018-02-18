@@ -92,9 +92,32 @@ header {
     }
 }
 
+@media (max-width: 905px) {
+    header {
+        .header {
+            .main-nav {
+                .container {
+                    padding: 0;
+                }
+                ul {
+                    display: block;
+                    li {
+                        display: block;
+                        padding: 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .social-media-icon {
     margin: 0 5px;
     font-size: 25px;
+}
+
+.display-name{
+    color: #fff;
 }
 
 html, body {
@@ -186,6 +209,7 @@ footer {
 
 .container {
     max-width: 85em;
+    padding-top: 15px;
 }
 
 .role-icon-wrapper {
@@ -263,6 +287,22 @@ select.ninja-forms-field:not([size]):not([multiple]) {
     margin: 15px;
 }
 
+.author-name {
+    font-size: 1.5rem;
+}
+
+.news-post-image {
+    border: 1px solid $main-border-color;
+    background: no-repeat center center;
+    background-color: $placeholder-bg-color;
+    background-size: cover;
+    height: 250px;
+}
+
+.divider {
+    border-top: 5px solid $divider-color;
+}
+
 .item-container {
     .news-item-wrapper {
         margin: 15px 0;
@@ -270,6 +310,7 @@ select.ninja-forms-field:not([size]):not([multiple]) {
     .news-image {
         background: no-repeat center center;
         background-size: cover;
+        background-color: $placeholder-bg-color;
         height: 125px;
     }
     .news-col {
@@ -302,10 +343,13 @@ select.ninja-forms-field:not([size]):not([multiple]) {
             color: $main-font-color;
             background: $header-bg-color;
         }
-        .news-meta-title {
-            padding: 5px;
-            color: $meta-title-font-color;
-            background: $meta-bg-color;
+        .news-meta-row{
+            margin: 0;
+            .news-meta-title {
+                padding: 5px;
+                color: $meta-title-font-color;
+                background: $meta-bg-color;
+            }
         }
         .news-title-wrapper {
             height: 70%;
@@ -323,6 +367,7 @@ select.ninja-forms-field:not([size]):not([multiple]) {
         height: 200px;
         margin-bottom: 0;
         .col-12 {
+            background-color: $placeholder-bg-color;
             background-size: cover;
         }
     }
@@ -356,6 +401,15 @@ select.ninja-forms-field:not([size]):not([multiple]) {
     .player-meta-row {
         width: 100%;
         margin: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .player-social {
+        display: block !important;
+    }
+    .player-social-placeholder {
+        display: none !important;
     }
 }
 
