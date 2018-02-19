@@ -50,8 +50,7 @@ header {
                     min-width: 200px;
                     text-align: center;
                 }
-                a:focus,
-                a:hover {
+                a:focus, a:hover {
                     color: $main-link-hover-color;
                     border-color: $main-link-hover-color;
                 }
@@ -115,15 +114,14 @@ header {
 
 .social-media-icon {
     margin: 0 5px;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .display-name {
     color: #fff;
 }
 
-html,
-body {
+html, body {
     height: 100%;
 }
 
@@ -201,6 +199,24 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    footer {
+        .row {
+            .col-12 {
+                .left-section {
+                    text-align: center;
+                }
+                .right-section {
+                    .copyright-text {
+                        float: none !important;
+                    }
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
 .main-menu {
     background: $header-bg-color;
     a {
@@ -212,7 +228,7 @@ footer {
     max-width: 85em;
 }
 
-.wrapped-content{
+.wrapped-content {
     background: $wrapped-bg-color;
     box-shadow: 0 0 15px rgba(0, 0, 0, .07);
 }
@@ -229,9 +245,23 @@ footer {
     padding: 15px;
 }
 
-.nf-field-element input:not([type="button"]),
-.nf-field-element textarea,
-.nf-field-element select {
+.twitch-icon {
+    color: $twitch-icon-color;
+}
+
+.youtube-icon {
+    color: $youtube-icon-color;
+}
+
+.twitter-icon {
+    color: $twitter-icon-color;
+}
+
+.facebook-icon {
+    color: $facebook-icon-color;
+}
+
+.nf-field-element input:not([type="button"]), .nf-field-element textarea, .nf-field-element select {
     display: block;
     width: 100%;
     padding: .375rem .75rem;
@@ -245,9 +275,7 @@ footer {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.nf-field-element input:not([type="button"]):focus,
-.nf-field-element textarea:focus,
-.nf-field-element select:focus {
+.nf-field-element input:not([type="button"]):focus, .nf-field-element textarea:focus, .nf-field-element select:focus {
     color: #495057;
     background-color: #fff;
     border-color: #80bdff;
@@ -348,8 +376,7 @@ select.ninja-forms-field:not([size]):not([multiple]) {
             margin: 0;
         }
     }
-    .news-col,
-    .player-col {
+    .news-col, .player-col {
         background: $header-bg-color;
         .meta-title {
             margin: 0;
@@ -409,8 +436,7 @@ select.ninja-forms-field:not([size]):not([multiple]) {
         margin-top: 0;
         margin-bottom: 15px;
     }
-    .hover-trigger:hover+.player-social,
-    .player-social:hover {
+    .hover-trigger:hover+.player-social, .player-social:hover {
         display: block;
         +.player-social-placeholder {
             display: none;

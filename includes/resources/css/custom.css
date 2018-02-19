@@ -41,8 +41,7 @@ header {
           transition: .5s;
           min-width: 200px;
           text-align: center; }
-        header .main-nav ul li a:focus,
-        header .main-nav ul li a:hover {
+        header .main-nav ul li a:focus, header .main-nav ul li a:hover {
           color: #000;
           border-color: #000; }
       header .main-nav ul .current_page_item a {
@@ -70,13 +69,12 @@ header {
       padding: 0 0; } }
 .social-media-icon {
   margin: 0 5px;
-  font-size: 25px; }
+  font-size: 1.5rem; }
 
 .display-name {
   color: #fff; }
 
-html,
-body {
+html, body {
   height: 100%; }
 
 body {
@@ -131,6 +129,13 @@ footer {
           color: #f1f1f1;
           float: right; }
 
+@media (max-width: 768px) {
+  footer .row .col-12 .left-section {
+    text-align: center; }
+  footer .row .col-12 .right-section {
+    text-align: center; }
+    footer .row .col-12 .right-section .copyright-text {
+      float: none !important; } }
 .main-menu {
   background: #fff; }
   .main-menu a {
@@ -152,9 +157,19 @@ footer {
 .contact-form-wrapper {
   padding: 15px; }
 
-.nf-field-element input:not([type="button"]),
-.nf-field-element textarea,
-.nf-field-element select {
+.twitch-icon {
+  color: #4b367c; }
+
+.youtube-icon {
+  color: #ff0000; }
+
+.twitter-icon {
+  color: #1da1f2; }
+
+.facebook-icon {
+  color: #4267b2; }
+
+.nf-field-element input:not([type="button"]), .nf-field-element textarea, .nf-field-element select {
   display: block;
   width: 100%;
   padding: .375rem .75rem;
@@ -167,9 +182,7 @@ footer {
   border-radius: .25rem;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
 
-.nf-field-element input:not([type="button"]):focus,
-.nf-field-element textarea:focus,
-.nf-field-element select:focus {
+.nf-field-element input:not([type="button"]):focus, .nf-field-element textarea:focus, .nf-field-element select:focus {
   color: #495057;
   background-color: #fff;
   border-color: #80bdff;
@@ -245,11 +258,9 @@ select.ninja-forms-field:not([size]):not([multiple]) {
   padding-top: 0; }
   .item-container .player-name-wrapper .player-name {
     margin: 0; }
-.item-container .news-col,
-.item-container .player-col {
+.item-container .news-col, .item-container .player-col {
   background: #fff; }
-  .item-container .news-col .meta-title,
-  .item-container .player-col .meta-title {
+  .item-container .news-col .meta-title, .item-container .player-col .meta-title {
     margin: 0;
     padding: 10px;
     font-size: .8rem;
@@ -258,16 +269,13 @@ select.ninja-forms-field:not([size]):not([multiple]) {
     text-decoration: none !important;
     color: #3f3f3f;
     background: #fff; }
-  .item-container .news-col .news-meta-row,
-  .item-container .player-col .news-meta-row {
+  .item-container .news-col .news-meta-row, .item-container .player-col .news-meta-row {
     margin: 0; }
-    .item-container .news-col .news-meta-row .news-meta-title,
-    .item-container .player-col .news-meta-row .news-meta-title {
+    .item-container .news-col .news-meta-row .news-meta-title, .item-container .player-col .news-meta-row .news-meta-title {
       padding: 5px;
       color: #fff;
       background: #434343; }
-  .item-container .news-col .news-title-wrapper,
-  .item-container .player-col .news-title-wrapper {
+  .item-container .news-col .news-title-wrapper, .item-container .player-col .news-title-wrapper {
     padding: 10px;
     display: flex; }
 .item-container .row {
@@ -296,11 +304,9 @@ select.ninja-forms-field:not([size]):not([multiple]) {
   height: 50px;
   margin-top: 0;
   margin-bottom: 15px; }
-.item-container .hover-trigger:hover + .player-social,
-.item-container .player-social:hover {
+.item-container .hover-trigger:hover + .player-social, .item-container .player-social:hover {
   display: block; }
-  .item-container .hover-trigger:hover + .player-social + .player-social-placeholder,
-  .item-container .player-social:hover + .player-social-placeholder {
+  .item-container .hover-trigger:hover + .player-social + .player-social-placeholder, .item-container .player-social:hover + .player-social-placeholder {
     display: none; }
 .item-container .player-meta-row {
   width: 100%;
