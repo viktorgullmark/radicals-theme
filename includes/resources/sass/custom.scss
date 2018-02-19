@@ -333,6 +333,7 @@ select.ninja-forms-field:not([size]):not([multiple]) {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 200px;
     height: 400px;
     .container {
         .news-post-caption {
