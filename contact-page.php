@@ -8,9 +8,9 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         ?>
-<main class="container">
+<main class="container wrapped-content">
     <div class="row">
-        <div class="col-lg-5 col-md-8 col-sm-12 contact-form-wrapper mx-auto">
+        <div class="col-lg-8 col-md-8 col-sm-12 contact-form-wrapper mx-auto">
         <?php echo do_shortcode("[ninja_form id=2]"); ?>
     </div>
     </div>

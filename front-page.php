@@ -28,9 +28,9 @@ foreach ($news as $item) {
                     <a class="item-container" href="<?php echo the_permalink($item) ?>">
                         <div class="row news-item-wrapper">
                                 <?php if (get_field('image', $item)): ?>
-                                <div class="col-4 news-image" style="background-image: url('<?php the_field('image', $item)?>')">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 news-image news-image" style="background-image: url('<?php the_field('image', $item)?>')">
                                 <?php else: ?>
-                                <div class="col-4 news-image">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 news-image news-image">
                                 <?php endif;?>
                             </div>
                             <div class="news-col col">
