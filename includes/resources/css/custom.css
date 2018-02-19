@@ -264,21 +264,32 @@ select.ninja-forms-field:not([size]):not([multiple]) {
   .item-container .news-col .meta-title, .item-container .player-col .meta-title {
     margin: 0;
     padding: 10px;
-    font-size: .8rem;
+    font-size: .7rem;
     display: block;
     position: relative;
     text-decoration: none !important;
     color: #3f3f3f;
     background: #fff; }
   .item-container .news-col .news-meta-row, .item-container .player-col .news-meta-row {
+    height: 100%;
     margin: 0; }
-    .item-container .news-col .news-meta-row .news-meta-title, .item-container .player-col .news-meta-row .news-meta-title {
-      padding: 5px;
-      color: #fff;
-      background: #434343; }
-  .item-container .news-col .news-title-wrapper, .item-container .player-col .news-title-wrapper {
-    padding: 10px;
-    display: flex; }
+    .item-container .news-col .news-meta-row .news-title-wrapper, .item-container .player-col .news-meta-row .news-title-wrapper {
+      padding: 10px;
+      display: flex;
+      margin: 0;
+      height: 80%; }
+      .item-container .news-col .news-meta-row .news-title-wrapper .news-title, .item-container .player-col .news-meta-row .news-title-wrapper .news-title {
+        margin-top: .5rem; }
+    .item-container .news-col .news-meta-row .meta-inner, .item-container .player-col .news-meta-row .meta-inner {
+      height: 20%; }
+      .item-container .news-col .news-meta-row .meta-inner .news-meta-title, .item-container .player-col .news-meta-row .meta-inner .news-meta-title {
+        height: 100%;
+        padding: 5px;
+        color: #fff;
+        background: #434343;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); }
+        .item-container .news-col .news-meta-row .meta-inner .news-meta-title .row, .item-container .player-col .news-meta-row .meta-inner .news-meta-title .row {
+          box-shadow: none; }
 .item-container .row {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); }
 .item-container .player-photo {
@@ -313,7 +324,10 @@ select.ninja-forms-field:not([size]):not([multiple]) {
   width: 100%;
   margin: 0; }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
+  .news-meta-row .meta-inner {
+    height: auto !important; } }
+@media (max-width: 575px) {
   .player-social {
     display: block !important; }
 

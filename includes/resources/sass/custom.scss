@@ -348,7 +348,6 @@ select.ninja-forms-field:not([size]):not([multiple]) {
 .divider {
     border-top: 5px solid $divider-color;
 }
-
 .item-container {
     .news-item-wrapper {
         margin: 15px 0;
@@ -382,7 +381,7 @@ select.ninja-forms-field:not([size]):not([multiple]) {
         .meta-title {
             margin: 0;
             padding: 10px;
-            font-size: .8rem; //font-family: "Titillium Web Semibold", "Open Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: .7rem; //font-family: "Titillium Web Semibold", "Open Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
             display: block;
             position: relative;
             text-decoration: none !important;
@@ -390,16 +389,30 @@ select.ninja-forms-field:not([size]):not([multiple]) {
             background: $header-bg-color;
         }
         .news-meta-row {
-            margin: 0;
-            .news-meta-title {
-                padding: 5px;
-                color: $meta-title-font-color;
-                background: $meta-bg-color;
+            height: 100%;
+            .news-title-wrapper {
+                padding: 10px;
+                display: flex;
+                margin: 0;
+                height: 80%;
+                .news-title{
+                    margin-top: .5rem;
+                }
             }
-        }
-        .news-title-wrapper {
-            padding: 10px;
-            display: flex;
+            margin: 0;
+            .meta-inner {
+                height: 20%;
+                .news-meta-title {
+                    height: 100%;
+                    padding: 5px;
+                    color: $meta-title-font-color;
+                    background: $meta-bg-color;
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+                    .row{
+                        box-shadow: none;
+                    }
+                }
+            }
         }
     }
     .row {
@@ -449,7 +462,15 @@ select.ninja-forms-field:not([size]):not([multiple]) {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
+    .news-meta-row {
+        .meta-inner {
+            height: auto !important;
+        }
+    }
+}
+
+@media (max-width: 575px) {
     .player-social {
         display: block !important;
     }
