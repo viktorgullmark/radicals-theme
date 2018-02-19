@@ -15,10 +15,10 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         ?>
-<main>
+<main class="container">
 
     </div>
-        <div class="container">
+
             <?php the_content();?>
             <div class="row">
             <?php
@@ -49,7 +49,6 @@ foreach ($news as $item) {
             <?php
 }
         ?>
-            </div>
         </div>
     </div>
 </main>

@@ -30,7 +30,8 @@ $top_image = !empty(get_the_post_thumbnail_url($post, "full")) ? get_the_post_th
                 <div class="col-md-4"></div>
                 <div class="col-md-4 align-self-center">
                 <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-                    <img width="200" height="169" src="https://via.placeholder.com/200x169/CCC/000000"/> <!-- src="<?php the_field('logo', $frontpage)?>" -->
+                    <img width="200" height="158" src="<?php the_field('logo', $frontpage)?>" /> 
+                    <!-- https://via.placeholder.com/200x169/CCC/000000 -->
                 </a>
                 </div>
                 <div class="col-md-4 social-media-icons-wrapper">

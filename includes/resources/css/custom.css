@@ -25,6 +25,7 @@ header {
         padding: 0 5px; }
         header .main-nav ul li a {
           font-size: .8125rem;
+          font-family: "Titillium Web Semibold", "Open Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
           font-weight: 400;
           text-transform: uppercase;
           letter-spacing: .05em;
@@ -80,8 +81,7 @@ body {
   background: #f1f1f1;
   display: flex;
   flex-direction: column;
-  font-family: 'Lato', Helvetica Neue, Arial, sans-serif;
-  font-weight: 300; }
+  font-family: "Titillium Web Semibold", "Open Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 main {
   flex: 1 0 auto;
@@ -259,8 +259,9 @@ select.ninja-forms-field:not([size]):not([multiple]) {
   height: 200px;
   margin-bottom: 0; }
   .item-container .player-photo .col-12 {
-    background-color: #CCC;
-    background-size: cover; }
+    background: no-repeat center center;
+    background-size: cover;
+    background-color: #CCC; }
 .item-container .player-info {
   margin-top: 0;
   margin-bottom: 0; }

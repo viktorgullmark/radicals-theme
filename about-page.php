@@ -8,8 +8,7 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         ?>
-<main>
-    <div class="container">
+<main class="container">
         <h1>
             <?php echo the_field('header') ?>
         </h1>
@@ -18,7 +17,6 @@ if (have_posts()) {
                 <?php the_content() ?>
             </div>
         </div>
-    </div>
 </main>
 
 <?php

@@ -32,7 +32,8 @@ header {
                 margin: 0;
                 padding: 0 5px;
                 a {
-                    font-size: .8125rem; //font-family: "Titillium Web Semibold", "Open Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: .8125rem; 
+                    font-family: "Titillium Web Semibold", "Open Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
                     font-weight: 400;
                     text-transform: uppercase;
                     letter-spacing: .05em;
@@ -128,8 +129,8 @@ body {
     background: $bg-color;
     display: flex;
     flex-direction: column;
-    font-family: 'Lato', Helvetica Neue, Arial, sans-serif;
-    font-weight: 300;
+    font-family: "Titillium Web Semibold", "Open Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-weight: 300;
 }
 
 main {
@@ -367,8 +368,9 @@ select.ninja-forms-field:not([size]):not([multiple]) {
         height: 200px;
         margin-bottom: 0;
         .col-12 {
-            background-color: $placeholder-bg-color;
+            background: no-repeat center center;
             background-size: cover;
+            background-color: $placeholder-bg-color;
         }
     }
     .player-info {

@@ -18,8 +18,7 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         ?>
-<main>
-<div class="container">
+<main class="container">
             <?php
 
         $field_key = "field_5a82e972860d2";
@@ -42,9 +41,9 @@ echo '<h3>' . $v . '</h3>';
                     $role = get_field_object('role', $item);
                     $roleValue = $role['value'];
                     $roleLabel = $role['choices'][$roleValue];
-                    if (get_field('roster', $item) === $k):
+                    if (get_field('roster', $item) === $k && get_field('photo', $item)):
                     ?>
-   
+                
                 <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 player-col item-container-wrapper">
                     <div class="item-container player-item-container">
                         <div class="row player-photo">
@@ -82,16 +81,16 @@ echo '<h3>' . $v . '</h3>';
                         <div class="row player-social">
                             <div class="col player-col align-items-center player-social-row">
                             <?php if (get_field('facebook_url', $item)): ?>
-                                <a href="<?php the_field('facebook_url', $item)?>"><i class="social-media-icon fab fa-facebook"></i></a>
+                                <a href="https://<?php the_field('facebook_url', $item)?>"><i class="social-media-icon fab fa-facebook"></i></a>
                             <?php endif;?>
                             <?php if (get_field('twitter_url', $item)): ?>
-                                <a href="<?php the_field('twitter_url', $item)?>"><i class="social-media-icon fab fa-twitter"></i></a>
+                                <a href="https://<?php the_field('twitter_url', $item)?>"><i class="social-media-icon fab fa-twitter"></i></a>
                             <?php endif;?>
                             <?php if (get_field('youtube_url', $item)): ?>
-                                <a href="<?php the_field('youtube_url', $item)?>"><i class="social-media-icon fab fa-youtube"></i></a>
+                                <a href="https://<?php the_field('youtube_url', $item)?>"><i class="social-media-icon fab fa-youtube"></i></a>
                             <?php endif;?>
                             <?php if (get_field('twitch_url', $item)): ?>
-                                <a href="<?php the_field('twitch_url', $item)?>"><i class="social-media-icon fab fa-twitch"></i></a>
+                                <a href="https://<?php the_field('twitch_url', $item)?>"><i class="social-media-icon fab fa-twitch"></i></a>
                             <?php endif;?>
                             </div>
                         </div>
@@ -118,7 +117,6 @@ endif;
             <?php
 }
         ?>
-            </div>
 </main>
 <?php
 } // end while

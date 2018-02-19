@@ -5,8 +5,7 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         ?>
-<main>
-    <div class="container">
+<main class="container">
         <h1>
             <?php echo get_the_title() ?>
         </h1>
@@ -26,7 +25,6 @@ if (have_posts()) {
             // <?php echo get_author_name() ?>
             </div>
         </div>
-    </div>
 </main>
 <?php
 } // end while
