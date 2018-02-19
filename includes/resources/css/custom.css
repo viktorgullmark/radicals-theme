@@ -85,7 +85,7 @@ body {
 
 main {
   flex: 1 0 auto;
-  padding: 15px; }
+  padding: 25px 15px; }
 
 a {
   color: #3f3f3f; }
@@ -136,8 +136,7 @@ footer {
     color: #3f3f3f; }
 
 .container {
-  max-width: 85em;
-  padding-top: 15px; }
+  max-width: 85em; }
 
 .role-icon-wrapper {
   display: flex; }
