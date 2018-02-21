@@ -28,19 +28,29 @@ foreach ($news as $item) {
                     <a class="item-container" href="<?php echo the_permalink($item) ?>">
                         <div class="row news-item-wrapper">
                                 <?php if (get_field('image', $item)): ?>
-                                <div class="col-4 news-image" style="background-image: url('<?php the_field('image', $item)?>')">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 news-image news-image" style="background-image: url('<?php the_field('image', $item)?>')">
                                 <?php else: ?>
-                                <div class="col-4 news-image">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 news-image news-image">
                                 <?php endif;?>
                             </div>
                             <div class="news-col col">
-                                <div class="row news-meta-row">
-                                    <div class="col-6 news-meta-title meta-title">Posted <?php echo human_time_diff(get_the_time('U', $item), current_time('timestamp', 1)) . ' ago'; ?></div>
-                                    <div class="col-6 news-meta-title meta-title d-flex justify-content-end">by <?php echo get_the_author($item); ?></div>
+                                <div class="news-meta-row">
+                                    <div class="news-title-wrapper row align-items-center">
+                                        <h3 class="news-title"><?php echo $item->post_title ?></h3>
+                                    </div>
+                                    <div class="meta-inner">
+                                        <div class="col-12 news-meta-title meta-title">
+                                            <div class="row">
+                                                <div class="col d-flex justify-content-start">
+                                                    Posted <?php echo human_time_diff(get_the_time('U', $item), current_time('timestamp', 1)) . ' ago'; ?>
+                                                </div>
+                                                <div class="col d-flex justify-content-end">
+                                                by <?php echo get_the_author($item); ?></div>
+                                                </div>
+                                            </div>
+                                    </div>
                                 </div>
-                                <div class="news-title-wrapper align-items-center">
-                                    <h3 class="news-title"><?php echo $item->post_title ?></h3>
-                                </div>
+
                             </div>
                     </div>
                     </a>

@@ -46,11 +46,12 @@ echo '<h3>' . $v . '</h3>';
                 
                 <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 player-col item-container-wrapper">
                     <div class="item-container player-item-container">
+                        
+                        <div class="hover-trigger" onclick="">
                         <div class="row player-photo">
                             <div class="col-12" style="background-image: url('<?php the_field('photo', $item)?>')">
                         </div>
                         </div>
-                        <div class="hover-trigger" onclick="">
                         <div class="row player-info">
                             <div class="col-10 player-col">
                                 <div class="meta-title"><?php echo $roleLabel ?></div>
@@ -81,16 +82,16 @@ echo '<h3>' . $v . '</h3>';
                         <div class="row player-social">
                             <div class="col player-col align-items-center player-social-row">
                             <?php if (get_field('facebook_url', $item)): ?>
-                                <a href="https://<?php the_field('facebook_url', $item)?>"><i class="social-media-icon fab fa-facebook"></i></a>
+                                <a class="facebook-icon" href="https://<?php the_field('facebook_url', $item)?>"><i class="social-media-icon fab fa-facebook"></i></a>
                             <?php endif;?>
                             <?php if (get_field('twitter_url', $item)): ?>
-                                <a href="https://<?php the_field('twitter_url', $item)?>"><i class="social-media-icon fab fa-twitter"></i></a>
+                                <a class="twitter-icon" href="https://<?php the_field('twitter_url', $item)?>"><i class="social-media-icon fab fa-twitter"></i></a>
                             <?php endif;?>
                             <?php if (get_field('youtube_url', $item)): ?>
-                                <a href="https://<?php the_field('youtube_url', $item)?>"><i class="social-media-icon fab fa-youtube"></i></a>
+                                <a class="youtube-icon" href="https://<?php the_field('youtube_url', $item)?>"><i class="social-media-icon fab fa-youtube"></i></a>
                             <?php endif;?>
                             <?php if (get_field('twitch_url', $item)): ?>
-                                <a href="https://<?php the_field('twitch_url', $item)?>"><i class="social-media-icon fab fa-twitch"></i></a>
+                                <a class="twitch-icon" href="https://<?php the_field('twitch_url', $item)?>"><i class="social-media-icon fab fa-twitch"></i></a>
                             <?php endif;?>
                             </div>
                         </div>
