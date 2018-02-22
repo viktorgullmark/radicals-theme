@@ -17,6 +17,13 @@ header {
                     padding: 15px 0;
                 }
             }
+            .logo-title {
+                font-size: 1rem;
+                font-family: "Titillium Web Semibold", "Open Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-weight: 800;
+                text-transform: uppercase;
+                letter-spacing: .075em;
+            }
         }
     }
     .main-nav {
@@ -143,6 +150,7 @@ a {
 
 a:hover {
     color: $main-link-hover-color;
+    text-decoration: none;
 }
 
 .main-pic {
@@ -166,7 +174,7 @@ span {
 
 footer {
     background: $footer-bg-color;
-    height: 200px;
+    height: 175px;
     .footer-content {
         height: 100%;
         padding: 15px;
@@ -243,7 +251,7 @@ footer {
 .role-icon-wrapper {
     display: flex;
     .role-icon {
-        padding-right: 10px;
+        padding-left: 10px;
         font-size: 1.75rem;
     }
 }
@@ -371,6 +379,13 @@ select.ninja-forms-field:not([size]):not([multiple]) {
     .player-col {
         padding: 0;
     }
+    .player-meta-info {
+        margin: 0;
+        .role-icon-wrapper, .meta-title{
+            padding: 0;
+            display: inline-block;
+        }
+    }
     .player-title {
         padding: 10px;
         padding-top: 0;
@@ -439,6 +454,11 @@ select.ninja-forms-field:not([size]):not([multiple]) {
     .player-info {
         margin-top: 0;
         margin-bottom: 0;
+        .flag-icon-wrapper {
+            .player-flag-icon {
+                margin-right: 10px;
+            }
+        }
     }
     .player-social {
         display: none;
