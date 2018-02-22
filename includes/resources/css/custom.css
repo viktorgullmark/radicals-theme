@@ -89,6 +89,21 @@ body {
   flex-direction: column;
   font-family: "Titillium Web Semibold", "Open Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+  text-transform: uppercase; }
+
+h1, .h1 {
+  font-size: 2rem; }
+
+h2, .h2 {
+  font-size: 1.5rem; }
+
+h3, .h3 {
+  font-size: 1.25rem; }
+
+h4, .h4 {
+  font-size: 1.1rem; }
+
 main {
   flex: 1 0 auto;
   padding: 25px 15px; }
@@ -180,6 +195,9 @@ footer {
 
 .facebook-icon {
   color: #4267b2; }
+
+.nf-form-title {
+  display: none; }
 
 .nf-field-element input:not([type="button"]), .nf-field-element textarea, .nf-field-element select {
   display: block;
