@@ -12,8 +12,11 @@ $frontpage = get_post(get_option('page_on_front'));
     <meta property="og:title" content="Team Radicals - Overwatch team" />
     <meta property="og:description" content="Team-site for the Overwatch team Radicals" />
     <meta property="og:type" content="website" />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="<?php echo get_site_url(); ?>" />
     <meta property="og:image" content="<?php echo get_site_url(); ?>/wp-includes/images/radicals_og.jpg" />
+    <meta property="og:image:width" content="309" />
+    <meta property="og:image:height" content="218" />
     <?php wp_head();?>
 </head>
 <?php date_default_timezone_set("UTC");?>

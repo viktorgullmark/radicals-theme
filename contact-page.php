@@ -12,7 +12,7 @@ if (have_posts()) {
     <div class="row">
         <div class="col-lg-8 col-md-8 col-sm-12 contact-form-wrapper mx-auto">
         <h1>
-        <?php echo wp_title('') ?>
+        <?php echo $post->post_title ?>
         </h1>
         <?php echo do_shortcode("[ninja_form id=2]"); ?>
     </div>
