@@ -14,7 +14,7 @@ global $post;
                             <div class="social-media-icons">
                                 <?php get_template_part('partials/social-media-icons');?>
                             </div>
-                            <?php if (get_field('contact_email', $item)): ?>
+                            <?php if (get_field('contact_email', $frontpage)): ?>
                             <div class="footer-divider"></div>
                             <a class="mailto-link" href="mailto:<?php the_field('contact_email', $frontpage)?>"><?php the_field('contact_email', $frontpage)?></a>
                             <?php endif;?>
