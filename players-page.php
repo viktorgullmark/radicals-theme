@@ -84,6 +84,9 @@ echo '<h3>' . $v . '</h3>';
                         </div>
                         <div class="row player-social">
                             <div class="col player-col align-items-center player-social-row">
+                            <?php if (!get_field('twitch_url', $item) && !get_field('facebook_url', $item) && !get_field('youtube_url', $item) && !get_field('twitter_url', $item)): ?>
+                                <span>Nothing to show.</span>
+                            <?php endif;?>
                             <?php if (get_field('facebook_url', $item)): ?>
                                 <a class="facebook-icon" href="https://<?php the_field('facebook_url', $item)?>"><i class="social-media-icon fab fa-facebook"></i></a>
                             <?php endif;?>

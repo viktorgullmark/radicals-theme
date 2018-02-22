@@ -30,7 +30,7 @@ $top_image = !empty(get_the_post_thumbnail_url($post, "full")) ? get_the_post_th
                 <div class="col-md-4"></div>
                 <div class="col-md-4 align-self-center">
                 <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-                    <img width="140" src="<?php the_field('logo', $frontpage)?>" /> 
+                    <img width="125" src="<?php the_field('logo', $frontpage)?>" /> 
                 
                 <span class="logo-title row col-12 justify-content-center"><?php the_field('logo_title', $frontpage)?></span>
                 </a>
