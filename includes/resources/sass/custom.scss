@@ -366,7 +366,13 @@ select.ninja-forms-field:not([size]):not([multiple]) {
     font-size: 1.5rem;
 }
 
+.news-post-filler {
+    height: 50px;
+}
+
 .news-post-image {
+    border-top: 2px solid $main-theme-color;
+    border-bottom: 2px solid $main-theme-color;
     background-color: $placeholder-bg-color;
     background-size: cover;
     background-repeat: no-repeat;

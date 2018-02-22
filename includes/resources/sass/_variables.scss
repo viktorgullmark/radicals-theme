@@ -1,4 +1,8 @@
 // main
+
+$main-theme-color: #001891;
+$secondary-theme-color: #6a79c0;
+
 $header-bg-color: #fff;
 $header-bg-color-gradient: #fff;
 $footer-bg-color: #1f1f1f;
@@ -7,8 +11,8 @@ $main-border-color: #ccc;
 $meta-bg-color: #434343;
 $wrapped-bg-color: #fff;
 $main-link-color: #3f3f3f;
-$main-link-hover-color: #001891;
-$border-link-color: #001891;
+$main-link-hover-color: $main-theme-color;
+$border-link-color: $main-theme-color;
 
 // fonts
 $main-font-color: #3f3f3f;
@@ -22,7 +26,7 @@ $default-button-color: #ccc;
 
 $placeholder-bg-color: #CCC;
 
-$divider-color: #CCC;
+$divider-color: $secondary-theme-color;
 
 // icons
 

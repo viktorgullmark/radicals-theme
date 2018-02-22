@@ -253,7 +253,12 @@ select.ninja-forms-field:not([size]):not([multiple]) {
 .author-name {
   font-size: 1.5rem; }
 
+.news-post-filler {
+  height: 50px; }
+
 .news-post-image {
+  border-top: 2px solid #001891;
+  border-bottom: 2px solid #001891;
   background-color: #CCC;
   background-size: cover;
   background-repeat: no-repeat;
@@ -267,7 +272,7 @@ select.ninja-forms-field:not([size]):not([multiple]) {
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.4); }
 
 .divider {
-  border-top: 5px solid #CCC; }
+  border-top: 5px solid #6a79c0; }
 
 .item-container .news-item-wrapper {
   margin: 15px 0; }

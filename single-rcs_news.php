@@ -4,7 +4,8 @@ get_template_part('partials/menu');
 if (have_posts()) {
     while (have_posts()) {
         the_post();
-        ?>
+        ?>  
+                <div class="news-post-filler"></div>
                 <div class="news-post-image d-flex align-items-center" style="background-image: url('<?php the_field('image', the_post())?>')">
                 <div class="container">
                     <h1 class="news-post-caption">
