@@ -53,10 +53,8 @@ echo '<h3>' . $v . '</h3>';
                         </div>
                         </div>
                         <div class="row player-info">
-                            <div class="col-10 player-col">
-                                <div class="meta-title"><?php echo $roleLabel ?></div>
-                            </div>
-                            <div class="col-2 player-col role-icon-wrapper align-items-center justify-content-end">
+                            <div class="col-10 player-col player-meta-info d-flex align-items-center">
+                                <div class="role-icon-wrapper d-flex align-items-center">
                                 <?php if (get_field('role', $item) === 'flex'): ?>
                                     <i class="role-icon fas fa-recycle"></i>
                                 <?php elseif (get_field('role', $item) === 'offense'): ?>
@@ -66,6 +64,11 @@ echo '<h3>' . $v . '</h3>';
                                 <?php elseif (get_field('role', $item) === 'support'): ?>
                                     <i class="role-icon fas fa-plus"></i>
                                 <?php endif;?>
+                                </div>
+                                <div class="meta-title d-flex align-items-center justify-content-start"><?php echo $roleLabel ?></div>
+                            </div>
+                            <div class="col-2 player-col flag-icon-wrapper d-flex align-items-center justify-content-end">
+                                <i class="player-flag-icon flag-icon flag-icon-<?php the_field('country', $item)?>"></i>
                             </div>
                         </div>
                         <div class="row player-info">

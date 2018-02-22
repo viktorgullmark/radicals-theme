@@ -11,11 +11,13 @@ global $post;
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  align-items-center left-section">
                     <div class="row">
                         <div class="col-12">
+                            <?php if( get_field('facebook_url', $frontpage) || get_field('twitter_url', $frontpage) || get_field('youtube_url', $frontpage) || get_field('twitch_url', $frontpage)): ?>
                             <div class="social-media-icons">
                                 <?php get_template_part('partials/social-media-icons');?>
                             </div>
-                            <?php if (get_field('contact_email', $frontpage)): ?>
                             <div class="footer-divider"></div>
+                            <?php endif; ?>
+                            <?php if (get_field('contact_email', $frontpage)): ?>
                             <a class="mailto-link" href="mailto:<?php the_field('contact_email', $frontpage)?>"><?php the_field('contact_email', $frontpage)?></a>
                             <?php endif;?>
                             </div>

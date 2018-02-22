@@ -11,6 +11,12 @@ header {
       header .header #header-image .row .social-media-icons-wrapper {
         display: flex;
         padding: 15px 0; }
+    header .header #header-image .logo-title {
+      font-size: 1rem;
+      font-family: "Titillium Web Semibold", "Open Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .075em; }
   header .main-nav {
     box-shadow: 0 10px 10px -6px rgba(0, 0, 0, 0.2);
     border-top: 2px solid #ccc;
@@ -42,11 +48,11 @@ header {
           min-width: 200px;
           text-align: center; }
         header .main-nav ul li a:focus, header .main-nav ul li a:hover {
-          color: #000;
-          border-color: #000; }
+          color: #001891;
+          border-color: #001891; }
       header .main-nav ul .current_page_item a {
         color: #3f3f3f;
-        border-color: #3f3f3f; }
+        border-color: #001891; }
 
 @media (max-width: 767px) {
   header .header .main-pic #header-image .social-media-icons-wrapper {
@@ -91,7 +97,8 @@ a {
   color: #3f3f3f; }
 
 a:hover {
-  color: #000; }
+  color: #001891;
+  text-decoration: none; }
 
 .main-pic {
   height: 220px;
@@ -110,7 +117,7 @@ span {
 
 footer {
   background: #1f1f1f;
-  height: 200px; }
+  height: 175px; }
   footer .footer-content {
     height: 100%;
     padding: 15px; }
@@ -156,7 +163,7 @@ footer {
 .role-icon-wrapper {
   display: flex; }
   .role-icon-wrapper .role-icon {
-    padding-right: 10px;
+    padding-left: 10px;
     font-size: 1.75rem; }
 
 .contact-form-wrapper {
@@ -255,6 +262,11 @@ select.ninja-forms-field:not([size]):not([multiple]) {
   padding: 0; }
 .item-container .player-col {
   padding: 0; }
+.item-container .player-meta-info {
+  margin: 0; }
+  .item-container .player-meta-info .role-icon-wrapper, .item-container .player-meta-info .meta-title {
+    padding: 0;
+    display: inline-block; }
 .item-container .player-title {
   padding: 10px;
   padding-top: 0;
@@ -307,6 +319,8 @@ select.ninja-forms-field:not([size]):not([multiple]) {
 .item-container .player-info {
   margin-top: 0;
   margin-bottom: 0; }
+  .item-container .player-info .flag-icon-wrapper .player-flag-icon {
+    margin-right: 10px; }
 .item-container .player-social {
   display: none;
   margin-top: 0;
