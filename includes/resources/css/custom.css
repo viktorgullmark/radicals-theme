@@ -125,6 +125,11 @@ footer {
           color: #f1f1f1; }
         footer .footer-content .row .col-12 .left-section .social-media-icons a:hover {
           color: #fff; }
+        footer .footer-content .row .col-12 .left-section .footer-divider {
+          margin: 20px 0; }
+        footer .footer-content .row .col-12 .left-section .mailto-link {
+          color: #f1f1f1;
+          margin: 0 5px; }
         footer .footer-content .row .col-12 .right-section .copyright-text {
           color: #f1f1f1;
           float: right; }

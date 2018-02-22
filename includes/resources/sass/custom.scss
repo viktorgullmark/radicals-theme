@@ -187,6 +187,13 @@ footer {
                             color: $footer-font-hover-color;
                         }
                     }
+                    .footer-divider {
+                        margin: 20px 0;
+                    }
+                    .mailto-link {
+                        color: $footer-font-color;
+                        margin: 0 5px;
+                    }
                 }
                 .right-section {
                     .copyright-text {
