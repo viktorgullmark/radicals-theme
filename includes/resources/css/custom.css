@@ -16,7 +16,7 @@ header {
       font-family: "Titillium Web Semibold", "Open Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: .075em; }
+      letter-spacing: .25em; }
   header .main-nav {
     box-shadow: 0 10px 10px -6px rgba(0, 0, 0, 0.2);
     border-top: 2px solid #ccc;
@@ -48,11 +48,11 @@ header {
           min-width: 200px;
           text-align: center; }
         header .main-nav ul li a:focus, header .main-nav ul li a:hover {
-          color: #001891;
-          border-color: #001891; }
+          color: #9F0303;
+          border-color: #9F0303; }
       header .main-nav ul .current_page_item a {
         color: #3f3f3f;
-        border-color: #001891; }
+        border-color: #9F0303; }
 
 @media (max-width: 767px) {
   header .header .main-pic #header-image .social-media-icons-wrapper {
@@ -112,7 +112,7 @@ a {
   color: #3f3f3f; }
 
 a:hover {
-  color: #001891;
+  color: #9F0303;
   text-decoration: none; }
 
 .main-pic {
@@ -257,8 +257,8 @@ select.ninja-forms-field:not([size]):not([multiple]) {
   height: 50px; }
 
 .news-post-image {
-  border-top: 2px solid #001891;
-  border-bottom: 2px solid #001891;
+  border-top: 2px solid #9F0303;
+  border-bottom: 2px solid #9F0303;
   background-color: #CCC;
   background-size: cover;
   background-repeat: no-repeat;
@@ -272,7 +272,7 @@ select.ninja-forms-field:not([size]):not([multiple]) {
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.4); }
 
 .divider {
-  border-top: 5px solid #6a79c0; }
+  border-top: 5px solid #B10303; }
 
 .item-container .news-item-wrapper {
   margin: 15px 0; }
